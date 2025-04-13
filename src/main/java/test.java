@@ -7,6 +7,10 @@ public class test {
 
         int u = 3, f = 12, i =32;
 System.out.println(u + f + i);
+
+int w,r,t;
+w = r = t = 30;
+System.out.println( w + r + t);
     }
 }
 
