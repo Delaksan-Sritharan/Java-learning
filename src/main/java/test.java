@@ -4,7 +4,11 @@ public class test {
         int y = 2;
         int z = 3;
     System.out.println(x+y+z);
+
+        int u = 3, f = 12, i =32;
+System.out.println(u + f + i);
     }
 }
+
 
 
