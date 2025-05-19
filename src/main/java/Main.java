@@ -1,9 +1,9 @@
 public class Main {
-    int x;
+    int x = 40;
 
     public static void main(String []args){
         Main myobj = new Main();
-        myobj.x = 40;
+        myobj.x = 25;
         System.out.println(myobj.x);
 
     }
