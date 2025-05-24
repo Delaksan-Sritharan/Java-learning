@@ -1,19 +1,18 @@
 public class Main {
-   int modelYear;
-   String modelName;
+    static void myStaticMethod(){
+        System.out.println("Static methods can be called without creating objects");
+    }
 
-
-    public Main(int year, String name){
-        modelYear = year;
-        modelName = name;
+    public void myPublicMethod(){
+        System.out.println("Public methods must be called by creating objects");
     }
 
     public static void main(String[]args){
-        Main myobj = new Main(2019,"Toyota Chr");
-        System.out.println(myobj.modelYear + " " +myobj.modelName );
+        myStaticMethod();
+
+        Main obj = new Main();
+        obj.myPublicMethod();
     }
-
-
 }
 
 
