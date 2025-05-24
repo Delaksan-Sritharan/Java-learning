@@ -7,6 +7,12 @@ public class Main {
         myobj2.x = 25;
         System.out.println(myobj1.x);
         System.out.println(myobj2.x);
+        myMethod();
 
     }
+    static void myMethod(){
+        System.out.println("Hello World!");
+    }
+
+
 }
