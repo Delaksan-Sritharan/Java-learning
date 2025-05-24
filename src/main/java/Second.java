@@ -1,6 +1,7 @@
 public class Second {
     public static void main(String []args){
-//        Main myobj = new Main();
-//        System.out.println(myobj.x);
+    Main myCar = new Main();
+    myCar.fullThrottle();
+    myCar.speed(300);
     }
 }
