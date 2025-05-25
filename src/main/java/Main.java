@@ -1,18 +1,14 @@
-public class Main {
-    static void myStaticMethod(){
-        System.out.println("Static methods can be called without creating objects");
-    }
-
-    public void myPublicMethod(){
-        System.out.println("Public methods must be called by creating objects");
-    }
-
-    public static void main(String[]args){
-        myStaticMethod();
-
-        Main obj = new Main();
-        obj.myPublicMethod();
-    }
+abstract class Main{
+    public String fname = "Delaksan";
+    public int age = 20;
+    public abstract void study();
 }
 
+class Student extends Main {
+    public int graduationYear = 2028;
 
+    public void study() {
+        System.out.println("Studying all day long");
+
+    }
+}
