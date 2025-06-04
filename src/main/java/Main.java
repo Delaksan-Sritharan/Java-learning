@@ -1,20 +1,22 @@
-import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-class Main{
-    public static void main(String[]args){
-        Scanner obj = new Scanner(System.in);
 
-        System.out.print("Enter name, age and salary: ");
-
-        String name = obj.nextLine();
-
-        int age = obj.nextInt();
-
-        double salary = obj.nextDouble();
-
-        System.out.println("Name: "+ name);
-        System.out.println("Age: "+ age);
-        System.out.println("Salary : "+salary);
+public class Main{
+    public static void main(String[] args) {
+        LocalDateTime dateObj = LocalDateTime.now();
+        System.out.println("Before formatting: "+dateObj);
+        DateTimeFormatter formatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String fromattedDate = dateObj.format(formatObj);
+        System.out.println("After formatting : "+fromattedDate);
+        LocalDate obj = LocalDate.now();
+        LocalTime objTime = LocalTime.now();
+        LocalDateTime objDateTime = LocalDateTime.now();
+        System.out.println(obj);
+        System.out.println(objTime);
+        System.out.println(objDateTime);
     }
 
 }
