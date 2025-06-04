@@ -1,10 +1,20 @@
 import java.util.Scanner;
-class Main{
-    public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
-        System.out.print("Enter username : ");
 
-        String userName = obj.nextLine();
-        System.out.println("Username is : "+userName);
+class Main{
+    public static void main(String[]args){
+        Scanner obj = new Scanner(System.in);
+
+        System.out.print("Enter name, age and salary: ");
+
+        String name = obj.nextLine();
+
+        int age = obj.nextInt();
+
+        double salary = obj.nextDouble();
+
+        System.out.println("Name: "+ name);
+        System.out.println("Age: "+ age);
+        System.out.println("Salary : "+salary);
     }
+
 }
