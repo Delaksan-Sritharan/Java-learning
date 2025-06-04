@@ -1,29 +1,10 @@
-public class Main {
-    enum Level {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
-
+import java.util.Scanner;
+class Main{
     public static void main(String[] args) {
-        Level obj = Level.MEDIUM;
-        switch (obj) {
-            case LOW:
-                System.out.println("Low level");
-                break;
-            case MEDIUM:
-                System.out.println("Medium level");
-                break;
-            case HIGH:
-                System.out.println("High level");
-                break;
-        }
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter username : ");
 
-        // ---
-
-        // This loop was moved inside the main method
-        for (Level currentLevel : Level.values()) {
-            System.out.println(currentLevel);
-        }
+        String userName = obj.nextLine();
+        System.out.println("Username is : "+userName);
     }
 }
