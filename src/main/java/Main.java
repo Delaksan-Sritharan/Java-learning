@@ -8,7 +8,8 @@ public class Main{
         cars.add("Ford");
         cars.add("Mazda");
        cars.add(0,"Benz");
-        System.out.println(cars.get(0));
+       cars.clear();
+        System.out.println(cars);
 
     }
 
