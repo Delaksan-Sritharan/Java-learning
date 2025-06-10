@@ -10,9 +10,6 @@ public class Main{
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
         System.out.println(capitalCities);
-
-
-
     }
 
 }
