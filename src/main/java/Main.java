@@ -6,13 +6,9 @@ public class Main{
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
-        cars.add("BMW");
         cars.add("Mazda");
-        Iterator<String> it = cars.iterator();
-        while (it.hasNext()){
-            System.out.println(it.next());
-
-        }
+       cars.add(0,"Benz");
+        System.out.println(cars);
 
     }
 
