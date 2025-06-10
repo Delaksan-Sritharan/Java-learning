@@ -7,9 +7,7 @@ public class Main{
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
-       cars.add(0,"Benz");
-       cars.clear();
-        System.out.println(cars);
+        System.out.println(cars.size());
 
     }
 
