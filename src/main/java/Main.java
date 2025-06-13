@@ -7,7 +7,7 @@ public class Main{
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
-        Collections.sort(cars);
+        Collections.sort(cars,Collections.reverseOrder());
 for(String i : cars){
     System.out.println(i);
 }
