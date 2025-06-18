@@ -1,15 +1,18 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int i = 0;
-        while(i<=100){
-            if (i%2 ==0){
-                System.out.println(i);
-            }i++;
-        }
+      HashSet<Integer> luckyNumber = new HashSet<>();
+      Random rand = new Random();
+
+      while (luckyNumber.size()<6){
+          int number = rand.nextInt(49) +1;
+          luckyNumber.add(number);
+
+          System.out.println("Your lucky lottery numbers are:");
+          for(int num: luckyNumber){
+              System.out.println(num + " ");
+          }
+      }
     }
 }
