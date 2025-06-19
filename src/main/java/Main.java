@@ -2,15 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int x,y,sum;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Type a number: ");
-        x = input.nextInt();
-        System.out.println("Type another number: ");
-        y = input.nextInt();
-
-        sum = x + y;
-        System.out.println("Sum is: "+sum);
-
+        String word = "Delaksan is a future CEO of Wso2";
+        int countWord = word.split("\\s").length;
+        System.out.println(countWord);
     }
 }
