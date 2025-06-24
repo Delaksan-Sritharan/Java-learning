@@ -11,5 +11,6 @@ public class Main {
            }
        } System.out.println("Lowest Value: "+minVal);
        //nice
+        //nice
     }
 }
