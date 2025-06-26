@@ -10,6 +10,7 @@ public class Main {
                minVal = i;
            }
        } System.out.println("Lowest Value: "+minVal);
+
        //nice
     }
 }
